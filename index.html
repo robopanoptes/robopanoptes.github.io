@@ -1,0 +1,530 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>RoboPanoptes</title>
+		<meta charset="utf-8" />
+		 <meta name="viewport" content="width=1000">
+		<link rel="stylesheet" href="assets/css/main.css" />
+
+		<meta property="og:url"           content="https://robopanoptes.github.io" />
+	    <meta property="og:type"          content="website" />
+	    <meta property="og:title"         content="RoboPanoptes" />
+	    <meta property="og:description"   content="abstract" />
+	
+		<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+	</head>
+	<body id="top">
+
+
+		<!-- Main -->
+			<div id="main" style="padding-bottom:1em; padding-top: 5em; width: 60em; max-width: 70em; margin-left: auto; margin-right: auto;">
+					<section id="four">
+                        <h1 style="text-align: center; margin-bottom: 0; color: #4e79a7; font-size: 300%">RoboPanoptes:<br></h1>
+						<h2 style="text-align: center; white-space: nowrap; font-size: 200%">The All-Seeing Robot with Whole-body Dexterity</h2>
+						<h3 style="text-align: center; margin-top: -1em; margin-bottom: -1em;">
+							<span style="color: black"><a href="https://xxm19.github.io/">Xiaomeng Xu<sup>1</sup></a> &nbsp&nbsp <a
+									href="https://dornik.github.io/">Dominik Bauer<sup>2</sup></a>
+								&nbsp&nbsp <a
+									href="https://shurans.github.io/">Shuran Song<sup>1</sup></a> <br>
+							</span>
+							<p style="margin-top:0.25em;"><sup>1</sup>Stanford University &nbsp&nbsp&nbsp&nbsp <sup>2</sup>Columbia
+								University</p>
+						</h3>
+			
+						<div style="text-align:center; margin-bottom: 1em;">
+							<div>
+								<!-- PDF Link. -->
+								<span>
+									<a href="" class="button">
+										<span class="icon">
+											<i class="fa fa-file-pdf-o"></i>
+										</span>
+										<span>Paper</span>
+									</a>
+								</span>
+								<span>
+									<a href="" class="button">
+										<span class="icon">
+											<i class="fa fa-youtube-play"></i>
+										</span>
+										<span>Video (YouTube)</span>
+									</a>
+								</span>
+								<!-- Code Link. -->
+								<span>
+									<a href="" class="button">
+										<span class="icon">
+											<i class="fa fa-github"></i>
+										</span>
+										<span>Code (Coming Soon)</span>
+									</a>
+								</span>
+								<!-- Dataset Link. -->
+								<!-- <span>
+									<a href="" class="button">
+										<span class="icon">
+											<i class="fa fa-database"></i>
+										</span>
+										<span>Dataset</span>
+									</a>
+								</span> -->
+							</div>
+						</div>
+
+						<div class="row" style="margin-bottom: 0em;">
+							<div class="12u$ 12u$(xsmall)" style="text-align: center;">
+								<img src="images/RoboPanoptes.png" style="width: 100%; height: auto;">
+							</div>
+						</div>
+
+						<!-- <div class="row 50% uniform" style="width: 100%; color: black; margin-bottom: 0em;">
+							<div class="2u" style="font-size: 1em; line-height: 1em; text-align: center; width: 50%">
+								Sweep Small Objects
+							</div>
+
+							<div class="2u" style="font-size: 1em; line-height: 1em; text-align: center; width: 50%">
+								Move Large Objects
+							</div>
+						</div> -->
+						<div class="row 50% uniform" style="width: 100%">
+							<div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 50%">
+								<span class="image fit">
+									<video autoplay loop muted playsinline style="width: 100%; margin-right: 5%;">
+										<source src="videos/panoptes_sweep_small_compressed.mp4" type="video/mp4">
+									</video>
+									<div style="position: absolute; top: 2%; right: 1%">
+										<p style="color: white; text-align: center; font-size: 2em">1x</p>
+									</div>
+								</span>
+								<!-- sweep small -->
+							</div>
+
+							<div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 50%">
+								<span class="image fit">
+									<video autoplay loop muted playsinline style="width: 100%; margin-right: 5%;">
+										<source src="videos/panoptes_sweep_large_compressed.mp4" type="video/mp4">
+									</video>
+									<div style="position: absolute; top: 2%; right: 1%">
+										<p style="color: white; text-align: center; font-size: 2em">1x</p>
+									</div>
+								</span>
+								<!-- Sweep large -->
+							</div>
+						</div>
+
+						<!-- <div class="row 50% uniform" style="width: 100%; color: black; margin-bottom: 0em;">
+							<div class="2u" style="font-size: 1em; line-height: 1em; text-align: center; width: 50%">
+								Unbox in Narrow Space
+							</div>
+
+							<div class="2u" style="font-size: 1em; line-height: 1em; text-align: center; width: 50%">
+								Multi-step Stowing
+							</div>
+						</div> -->
+
+						<div class="row 50% uniform" style="width: 100%">
+							<div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 50%">
+								<span class="image fit">
+									<video autoplay loop muted playsinline style="width: 100%; margin-right: 5%;">
+										<source src="videos/panoptes_unbox.mp4" type="video/mp4">
+									</video>
+									<div style="position: absolute; top: 2%; right: 1%">
+										<p style="color: white; text-align: center; font-size: 2em">1x</p>
+									</div>
+								</span>
+								<!-- sweep small -->
+							</div>
+
+							<div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 50%">
+								<span class="image fit">
+									<video autoplay loop muted playsinline style="width: 100%; margin-right: 5%;">
+										<source src="videos/panoptes_stow0_compressed.mp4" type="video/mp4">
+									</video>
+									<div style="position: absolute; top: 2%; right: 1%">
+										<p style="color: white; text-align: center; font-size: 2em">1x</p>
+									</div>
+								</span>
+								<!-- Sweep large -->
+							</div>
+						</div>
+
+						<br> 
+
+						<p style="color: black;">We present RoboPanoptes, a capable yet practical robot system that achieves whole-body dexterity through whole-body vision. 
+							The whole-body dexterity allows the robot to utilize its entire body surface for manipulation such as leveraging multiple contact points or navigating in constrained spaces.
+							Meanwhile, whole-body vision uses a camera system distributed throughout the robot's body to provide comprehensive, multi-perspective visual feedback. 
+							At its core, RoboPanoptes uses a whole-body visuomotor policy that learns complex manipulation skills directly from human demonstrations, efficiently aggregating information from the distributed cameras while maintaining resilience to sensor failures. 
+							Together, these designs unlock new capabilities for RoboPanoptes on tasks such as unboxing in narrow spaces, sweeping multiple or oversized objects, and precise multi-step stowing in cluttered environments, outperforming baselines in adaptability and efficiency. All hardware designs, data, and code will be publicly available.
+						</p>
+						
+
+						<div class="row">
+							<div class="12u$ 12u$(xsmall)" style="text-align: center;">
+								<h3>Technical Summary Video (with audio)</h3>
+								<iframe width="840" height="473" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+							</div>
+						</div>
+
+						<hr>
+						<h3>Experiments</h3>
+						
+						<h4>(1) Unboxing &#128230; </h4>
+						<u><b>Task</b></u> The robot is tasked with opening a box with a lid that is randomly placed around the robot. To do so, the robot needs first to locate the small side hole of the box, then enter the box through the hole, drag the box closer if it is out of reach, extend its body through the hole, lift the lid open, and slide the lid aside to fully open the box.
+						<!-- <br>
+						<u><b>Capability</b></u> It demonstrates UMI’s ability to capture and transfer fluid and rapid human motions, precise hand-eye coordination (between RGB and propriocep- tion) and timing alignment (between robot and gripper). -->
+						<br>
+						<u><b>Comparisons</b></u> [Top-down Camera] policy struggles to determine the forward reach height. [Head Camera] policy fails by moving in the wrong direction. [w/o Camera Pose Encoding] policy struggles to open the lid and is less accurate at locating and entering the hole. [w/o Blink Training] policy underperforms in scenarios with camera dropout.
+						<div class="box alt" style="margin-bottom: 1em; margin-top: 1em;">
+							<div class="row 50% uniform" style="width: 100%;">
+								<div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 25%">
+									<span class="image fit" style="margin-bottom: 0.5em;">
+										<video controls autoplay loop muted playsinline style="width: 100%; margin-right: 5%;">
+											<source src="videos/panoptes_unbox1_compressed.mp4" type="video/mp4">
+										</video>
+										<div style="position: absolute; top: 2%; right: 1%">
+											<p style="color: white; text-align: center; font-size: 1em">1x</p>
+										</div>
+									</span>
+									Ours
+								</div>
+
+								<div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 25%">
+									<span class="image fit" style="margin-bottom: 0.5em;">
+										<video controls autoplay loop muted playsinline style="width: 100%; margin-right: 5%;">
+											<source src="videos/panoptes_unbox2_compressed.mp4" type="video/mp4">
+										</video>
+										<div style="position: absolute; top: 2%; right: 1%">
+											<p style="color: white; text-align: center; font-size: 1em">1x</p>
+										</div>
+									</span>
+									Ours
+								</div>
+
+								<div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 25%">
+									<span class="image fit" style="margin-bottom: 0.5em;">
+										<video controls autoplay loop muted playsinline style="width: 100%; margin-right: 5%;">
+											<source src="videos/panoptes_unbox3_compressed.mp4" type="video/mp4">
+										</video>
+										<div style="position: absolute; top: 2%; right: 1%">
+											<p style="color: white; text-align: center; font-size: 1em">1x</p>
+										</div>
+									</span>
+									Ours
+								</div>
+
+								<div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 25%">
+									<span class="image fit" style="margin-bottom: 0.5em;">
+										<video controls autoplay loop muted playsinline style="width: 100%; margin-right: 5%;">
+											<source src="videos/panoptes_unbox4_compressed.mp4" type="video/mp4">
+										</video>
+										<div style="position: absolute; top: 2%; right: 1%">
+											<p style="color: white; text-align: center; font-size: 1em">1x</p>
+										</div>
+									</span>
+									Ours
+								</div>
+							</div>
+						</div>
+
+						<div class="box alt" style="margin-bottom: 1em; margin-top: 1em;">
+							<div class="row 50% uniform" style="width: 100%;">
+								<div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 25%">
+									<span class="image fit" style="margin-bottom: 0.5em;">
+										<video controls autoplay loop muted playsinline style="width: 100%; margin-right: 5%;">
+											<source src="videos/panoptes_unbox_topdown_compressed.mp4" type="video/mp4">
+										</video>
+										<div style="position: absolute; top: 2%; right: 1%">
+											<p style="color: white; text-align: center; font-size: 1em">1x</p>
+										</div>
+									</span>
+									Top-down Camera
+								</div>
+
+								<div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 25%">
+									<span class="image fit" style="margin-bottom: 0.5em;">
+										<video controls autoplay loop muted playsinline style="width: 100%; margin-right: 5%;">
+											<source src="videos/panoptes_unbox_head_compressed.mp4" type="video/mp4">
+										</video>
+										<div style="position: absolute; top: 2%; right: 1%">
+											<p style="color: white; text-align: center; font-size: 1em">1x</p>
+										</div>
+									</span>
+									Head Camera
+								</div>
+
+								<div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 25%">
+									<span class="image fit" style="margin-bottom: 0.5em;">
+										<video controls autoplay loop muted playsinline style="width: 100%; margin-right: 5%;">
+											<source src="videos/panoptes_unbox_wocam_compressed.mp4" type="video/mp4">
+										</video>
+										<div style="position: absolute; top: 2%; right: 1%">
+											<p style="color: white; text-align: center; font-size: 1em">1x</p>
+										</div>
+									</span>
+									w/o Camera Pose Encoding
+								</div>
+
+								<div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 25%">
+									<span class="image fit" style="margin-bottom: 0.5em;">
+										<video controls autoplay loop muted playsinline style="width: 100%; margin-right: 5%;">
+											<source src="videos/panoptes_unbox_woblink.mp4" type="video/mp4">
+										</video>
+										<div style="position: absolute; top: 2%; right: 1%">
+											<p style="color: white; text-align: center; font-size: 1em">1x</p>
+										</div>
+									</span>
+									w/o Blink Training
+								</div>
+							</div>
+						</div>
+
+						<u><b>All Rollouts</b></u>
+						<div class="box alt" style="margin-bottom: 1em; margin-top: 1em;">
+							<div class="row 50% uniform" style="width: 100%;">
+								<div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 100%">
+									<span class="image fit" style="margin-bottom: 0.5em;">
+										<video controls autoplay loop muted playsinline style="width: 100%; margin-right: 5%;">
+											<source src="videos/panoptes_unbox1_compressed.mp4" type="video/mp4">
+										</video>
+									</span>
+								</div>
+							</div>
+						</div>
+
+						<h4>(2) Sweeping &#129521; </h4>
+						<u><b>Task</b></u> The robot is tasked to sweep all objects (small or large, randomly placed on a table or under the shelf) into a target region around its base.
+						<!-- <br>
+						<u><b>Capability</b></u> This task tests the system’s ability to learn both prehensile (pick and place) and non-prehensile actions (i.e., pushing to reorientate the cup). It also tests UMI's capability of learning multi-modal action distributions and sense relative depth through monocular camera observation and side mirrors. -->
+						<br>
+						<u><b>Comparisons</b></u> [Top-down Camera] policy fails to detect objects under the shelf and often knocks down tall objects. [Neck Cameras] policy struggles with objects behind the robot due to self-occlusion.
+						<div class="box alt" style="margin-bottom: 1em; margin-top: 1em;">
+							<div class="row 50% uniform" style="width: 100%;">
+								<div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 33%">
+									<span class="image fit" style="margin-bottom: 0.5em;">
+										<video controls autoplay loop muted playsinline style="width: 100%; margin-right: 5%;">
+											<source src="videos/panoptes_sweep_small2.mp4" type="video/mp4">
+										</video>
+										<div style="position: absolute; top: 2%; right: 1%">
+											<p style="color: white; text-align: center; font-size: 1em">1x</p>
+										</div>
+									</span>
+									Ours
+								</div>
+
+								<div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 33%">
+									<span class="image fit" style="margin-bottom: 0.5em;">
+										<video controls autoplay loop muted playsinline style="width: 100%; margin-right: 5%;">
+											<source src="videos/panoptes_sweep_large1_compressed.mp4" type="video/mp4">
+										</video>
+										<div style="position: absolute; top: 2%; right: 1%">
+											<p style="color: white; text-align: center; font-size: 1em">1x</p>
+										</div>
+									</span>
+									Ours
+								</div>
+
+								<div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 33%">
+									<span class="image fit" style="margin-bottom: 0.5em;">
+										<video controls autoplay loop muted playsinline style="width: 100%; margin-right: 5%;">
+											<source src="videos/panoptes_sweep_small1.mp4" type="video/mp4">
+										</video>
+										<div style="position: absolute; top: 2%; right: 1%">
+											<p style="color: white; text-align: center; font-size: 1em">1x</p>
+										</div>
+									</span>
+									Ours
+								</div>
+							</div>
+						</div>
+
+						<div class="box alt" style="margin-bottom: 1em; margin-top: 1em;">
+							<div class="row 50% uniform" style="width: 100%;">
+								<div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 33%">
+									<span class="image fit" style="margin-bottom: 0.5em;">
+										<video controls autoplay loop muted playsinline style="width: 100%; margin-right: 5%;">
+											<source src="videos/panoptes_sweep_topdown_compressed.mp4" type="video/mp4">
+										</video>
+										<div style="position: absolute; top: 2%; right: 1%">
+											<p style="color: white; text-align: center; font-size: 1em">1x</p>
+										</div>
+									</span>
+									Top-down Camera
+								</div>
+
+								<div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 33%">
+									<span class="image fit" style="margin-bottom: 0.5em;">
+										<video controls autoplay loop muted playsinline style="width: 100%; margin-right: 5%;">
+											<source src="videos/panoptes_sweep_large_topdown_compressed.mp4" type="video/mp4">
+										</video>
+										<div style="position: absolute; top: 2%; right: 1%">
+											<p style="color: white; text-align: center; font-size: 1em">1x</p>
+										</div>
+									</span>
+									Top-down Camera
+								</div>
+
+								<div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 33%">
+									<span class="image fit" style="margin-bottom: 0.5em;">
+										<video controls autoplay loop muted playsinline style="width: 100%; margin-right: 5%;">
+											<source src="videos/panoptes_sweep_neck_compressed.mp4" type="video/mp4">
+										</video>
+										<div style="position: absolute; top: 2%; right: 1%">
+											<p style="color: white; text-align: center; font-size: 1em">1x</p>
+										</div>
+									</span>
+									Neck Cameras
+								</div>
+							</div>
+						</div>
+
+						<u><b>Efficiency Comparisons</b></u> With whole-body sweeping, the robot manipulates object piles much more efficiently by leveraging multiple contacts (2s/block for teleoperation and 3.2s/block for rollouts) than by using only an end-effector to move objects one by one (9.3s/block for teleoperation).
+
+						<div class="box alt" style="margin-bottom: 1em; margin-top: 1em;">
+							<div class="row 50% uniform" style="width: 100%;">
+								<div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 33%">
+									<span class="image fit" style="margin-bottom: 0.5em;">
+										<video controls autoplay loop muted playsinline style="width: 100%; margin-right: 5%;">
+											<source src="videos/panoptes_sweep_ee_compressed.mp4" type="video/mp4">
+										</video>
+										<div style="position: absolute; top: 2%; right: 1%">
+											<p style="color: white; text-align: center; font-size: 1em">1x</p>
+										</div>
+									</span>
+									Teleop EE Only
+								</div>
+
+								<div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 33%">
+									<span class="image fit" style="margin-bottom: 0.5em;">
+										<video controls autoplay loop muted playsinline style="width: 100%; margin-right: 5%;">
+											<source src="videos/panoptes_sweep_teleop_compressed.mp4" type="video/mp4">
+										</video>
+										<div style="position: absolute; top: 2%; right: 1%">
+											<p style="color: white; text-align: center; font-size: 1em">1x</p>
+										</div>
+									</span>
+									Teleop Whole-body
+								</div>
+
+								<div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 33%">
+									<span class="image fit" style="margin-bottom: 0.5em;">
+										<video controls autoplay loop muted playsinline style="width: 100%; margin-right: 5%;">
+											<source src="videos/panoptes_sweep_rollout_compressed.mp4" type="video/mp4">
+										</video>
+										<div style="position: absolute; top: 2%; right: 1%">
+											<p style="color: white; text-align: center; font-size: 1em">1x</p>
+										</div>
+									</span>
+									Rollout Whole-body
+								</div>
+							</div>
+						</div>
+						<u><b>All Rollouts</b></u>
+						<div class="box alt" style="margin-bottom: 1em; margin-top: 1em;">
+							<div class="row 50% uniform" style="width: 100%;">
+								<div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 100%">
+									<span class="image fit" style="margin-bottom: 0.5em;">
+										<video controls autoplay loop muted playsinline style="width: 100%; margin-right: 5%;">
+											<source src="videos/panoptes_unbox1_compressed.mp4" type="video/mp4">
+										</video>
+									</span>
+								</div>
+							</div>
+						</div>
+						
+						<h4>(3) Stowing &#128095; </h4>
+						<u><b>Task</b></u> The robot performs a sequence of actions to stow shoes in a drawer: hook and pull the drawer handle to open it, pick up a pair of shoes one by one, place the shoes inside the drawer, and finally close the drawer by pushing it back. 
+						<!-- <br>
+						<u><b>Capability</b></u> It tests UMI’s ability to synchronize two-arm coordination. -->
+						<br>
+						<u><b>Comparisons</b></u> [Top-down Camera] fails to locate the handle. [w/o Camera Pose Encoding] is less precise, leading to errors like missing the shoe or misaligning the drawer.
+						<!-- For example, when the two arms lift the bottom hem of the shirt, it often misses one of the grasps due to asynchronous grasp actions. -->
+						<div class="box alt" style="margin-bottom: 1em; margin-top: 1em;">
+							<div class="row 50% uniform" style="width: 100%;">
+								<div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 25%">
+									<span class="image fit" style="margin-bottom: 0.5em;">
+										<video controls autoplay loop muted playsinline style="width: 100%; margin-right: 5%;">
+											<source src="videos/panoptes_stow1_compressed.mp4" type="video/mp4">
+										</video>
+										<div style="position: absolute; top: 2%; right: 1%">
+											<p style="color: white; text-align: center; font-size: 1em">1x</p>
+										</div>
+									</span>
+									Ours
+								</div>
+
+								<div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 25%">
+									<span class="image fit" style="margin-bottom: 0.5em;">
+										<video controls autoplay loop muted playsinline style="width: 100%; margin-right: 5%;">
+											<source src="videos/panoptes_stow_topdown_compressed.mp4" type="video/mp4">
+										</video>
+										<div style="position: absolute; top: 2%; right: 1%">
+											<p style="color: white; text-align: center; font-size: 1em">1x</p>
+										</div>
+									</span>
+									Top-down Camera
+								</div>
+
+								<div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 25%">
+									<span class="image fit" style="margin-bottom: 0.5em;">
+										<video controls autoplay loop muted playsinline style="width: 100%; margin-right: 5%;">
+											<source src="videos/panoptes_stow2_compressed.mp4" type="video/mp4">
+										</video>
+										<div style="position: absolute; top: 2%; right: 1%">
+											<p style="color: white; text-align: center; font-size: 1em">1x</p>
+										</div>
+									</span>
+									Ours
+								</div>
+
+								<div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 25%">
+									<span class="image fit" style="margin-bottom: 0.5em;">
+										<video controls autoplay loop muted playsinline style="width: 100%; margin-right: 5%;">
+											<source src="videos/panoptes_wocam_compressed.mp4" type="video/mp4">
+										</video>
+										<div style="position: absolute; top: 2%; right: 1%">
+											<p style="color: white; text-align: center; font-size: 1em">1x</p>
+										</div>
+									</span>
+									w/o Camera Pose Encoding
+								</div>
+							</div>
+						</div>
+						<u><b>All Rollouts</b></u>
+						<div class="box alt" style="margin-bottom: 1em; margin-top: 1em;">
+							<div class="row 50% uniform" style="width: 100%;">
+								<div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 100%">
+									<span class="image fit" style="margin-bottom: 0.5em;">
+										<video controls autoplay loop muted playsinline style="width: 100%; margin-right: 5%;">
+											<source src="videos/panoptes_unbox1_compressed.mp4" type="video/mp4">
+										</video>
+									</span>
+								</div>
+							</div>
+						</div>
+
+						<hr>
+						<h3>Citation</h3>
+							<pre><code style="color: black">@article{}</code></pre>
+			
+						<h3>Contact</h3>
+						If you have any questions, please feel free to contact <a href="https://xxm19.github.io/">Xiaomeng Xu</a>.
+						<br><br>
+			
+						<h3>Acknowledgement</h3>
+						The authors would like to thank Han Zhang, Ken Wang, Yifan Hou, Haoyu Xiong, Haochen Shi, Cheng Chi, Zhenjia Xu, Adrian Wong for their advice on the design of the robot and
+						implementation of hardwares. In addition, we would like to thank all REALab members: Mengda Xu, Mandi Zhao, Zeyi Liu, Huy Ha, Max Du, Hojung Choi, Austin Patel, Shuang Li, Chuer Pan, Yihuai Gao, John So, Eric Liang, et al. for fruitful discussions.
+						The views and conclusions contained herein are those of the authors and should not be
+						interpreted as necessarily representing the official policies, either expressed or implied, of the sponsors.
+						<br><br>
+					</section>
+					
+			</div>
+			<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+	</body>
+</html>
