@@ -6,6 +6,16 @@
 		 <meta name="viewport" content="width=1000">
 		<link rel="stylesheet" href="assets/css/main.css" />
 
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-H44516PRVY"></script>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-H44516PRVY');
+		</script>
+
 		<meta property="og:url"           content="https://robopanoptes.github.io" />
 	    <meta property="og:type"          content="website" />
 	    <meta property="og:title"         content="RoboPanoptes" />
@@ -14,8 +24,8 @@
 		<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 	</head>
-	<body id="top">
 
+	<body id="top">
 
 		<!-- Main -->
 			<div id="main" style="padding-bottom:1em; padding-top: 5em; width: 60em; max-width: 70em; margin-left: auto; margin-right: auto;">
@@ -71,7 +81,11 @@
 								</span> -->
 							</div>
 						</div>
-
+						
+						<p style="color: black;">
+							A robot system that utilizes all of its body parts to <b>sense</b> and <b>interact</b> with the environment. 
+							<i>Argos Panoptes</i> is a many-eyed giant in Greek mythology, with "panoptes" meaning "all-seeing". Thus <i>RoboPanoptes</i> is the many-eyed, all-seeing robot.
+						</p>
 						<div class="row" style="margin-bottom: 0em;">
 							<div class="12u$ 12u$(xsmall)" style="text-align: center;">
 								<img src="images/RoboPanoptes.png" style="width: 100%; height: auto;">
@@ -507,6 +521,61 @@
 						</div>
 
 						<hr>
+						<h4>Camera Views Visualizations</h4>
+						We visualize views from all 21 cameras during policy rollouts.
+						<div class="box alt" style="margin-bottom: 1em; margin-top: 1em;">
+							<div class="row 50% uniform" style="width: 100%;">
+								<div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 25%">
+									<span class="image fit" style="margin-bottom: 0.5em;">
+										<video controls autoplay loop muted playsinline style="width: 100%; margin-right: 5%;">
+											<source src="videos/concat_unbox_1.mp4" type="video/mp4">
+										</video>
+										<div style="position: absolute; top: 2%; right: 1%">
+											<p style="color: white; text-align: center; font-size: 1em">1x</p>
+										</div>
+									</span>
+									Unboxing
+								</div>
+
+								<div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 25%">
+									<span class="image fit" style="margin-bottom: 0.5em;">
+										<video controls autoplay loop muted playsinline style="width: 100%; margin-right: 5%;">
+											<source src="videos/concat_sweep_small1.mp4" type="video/mp4">
+										</video>
+										<div style="position: absolute; top: 2%; right: 1%">
+											<p style="color: white; text-align: center; font-size: 1em">1x</p>
+										</div>
+									</span>
+									Sweeping (Small)
+								</div>
+
+								<div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 25%">
+									<span class="image fit" style="margin-bottom: 0.5em;">
+										<video controls autoplay loop muted playsinline style="width: 100%; margin-right: 5%;">
+											<source src="videos/concat_sweep_large.mp4" type="video/mp4">
+										</video>
+										<div style="position: absolute; top: 2%; right: 1%">
+											<p style="color: white; text-align: center; font-size: 1em">1x</p>
+										</div>
+									</span>
+									Sweeping (Large)
+								</div>
+
+								<div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 25%">
+									<span class="image fit" style="margin-bottom: 0.5em;">
+										<video controls autoplay loop muted playsinline style="width: 100%; margin-right: 5%;">
+											<source src="videos/concat_stow2.mp4" type="video/mp4">
+										</video>
+										<div style="position: absolute; top: 2%; right: 1%">
+											<p style="color: white; text-align: center; font-size: 1em">1x</p>
+										</div>
+									</span>
+									Stowing
+								</div>
+							</div>
+						</div>
+
+						<hr>
 						<h3>Citation</h3>
 							<pre><code style="color: black">@article{}</code></pre>
 			
@@ -515,7 +584,7 @@
 						<br><br>
 			
 						<h3>Acknowledgement</h3>
-						The authors would like to thank Han Zhang, Ken Wang, Yifan Hou, Haoyu Xiong, Haochen Shi, Mengda Xu, Cheng Chi, Zhenjia Xu, and Adrian Wong for their advice on the design of the robot and implementation of hardware. In addition, we would like to thank all REALab members: Mandi Zhao, Zeyi Liu, Huy Ha, Max Du, Hojung Choi, Austin Patel, Shuang Li, Chuer Pan, Yihuai Gao, John So, Eric Liang, et al. for fruitful discussions.
+						The authors would like to thank Han Zhang, Ken Wang, Yifan Hou, Haoyu Xiong, Haochen Shi, Mengda Xu, Cheng Chi, Zhenjia Xu, and Adrian Wong for their advice on the design of the robot and implementation of hardware. We thank Huy Ha for his help on rendering and video editing. In addition, we would like to thank all REALab members: Mandi Zhao, Zeyi Liu, Max Du, Hojung Choi, Austin Patel, Shuang Li, Chuer Pan, Yihuai Gao, John So, Eric Liang, et al. for fruitful discussions.
 						The views and conclusions contained herein are those of the authors and should not be
 						interpreted as necessarily representing the official policies, either expressed or implied, of the sponsors.
 						<br><br>
