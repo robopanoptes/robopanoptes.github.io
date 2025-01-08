@@ -71,26 +71,26 @@
 									</a>
 								</span>
 								<!-- Dataset Link. -->
-								<!-- <span>
+								<span>
 									<a href="" class="button">
 										<span class="icon">
 											<i class="fa fa-database"></i>
 										</span>
-										<span>Dataset</span>
+										<span>Hardware (Coming Soon)</span>
 									</a>
-								</span> -->
+								</span>
 							</div>
 						</div>
 						
-						<p style="color: black;">
-							A robot system that utilizes all of its body parts to <b>sense</b> and <b>interact</b> with the environment. 
-							<i>Argos Panoptes</i> is a many-eyed giant in Greek mythology, with "panoptes" meaning "all-seeing". Thus <i>RoboPanoptes</i> is the many-eyed, all-seeing robot.
-						</p>
-						<div class="row" style="margin-bottom: 0em;">
-							<div class="12u$ 12u$(xsmall)" style="text-align: center;">
-								<img src="images/RoboPanoptes.png" style="width: 100%; height: auto;">
-							</div>
+						<!-- <p style="color: black;"> -->
+						<div style="margin-top: 2em; margin-bottom: 2em;">
+							<h3 style="color: black;">
+								RoboPanoptes is a robot system that utilizes all of its body parts to <b>sense</b> and <b>interact</b> with the environment. 
+							<!-- <br> -->
+								<i>Argos Panoptes</i> is a many-eyed giant in Greek mythology, with "panoptes" meaning "all-seeing". Thus <i>RoboPanoptes</i> is the many-eyed, all-seeing robot.
+							</h3>
 						</div>
+						<!-- </p> -->
 
 						<!-- <div class="row 50% uniform" style="width: 100%; color: black; margin-bottom: 0em;">
 							<div class="2u" style="font-size: 1em; line-height: 1em; text-align: center; width: 50%">
@@ -163,31 +163,43 @@
 							</div>
 						</div>
 
-						<br> 
-
-						<p style="color: black;">We present RoboPanoptes, a capable yet practical robot system that achieves whole-body dexterity through whole-body vision. 
-							The whole-body dexterity allows the robot to utilize its entire body surface for manipulation such as leveraging multiple contact points or navigating in constrained spaces.
-							Meanwhile, whole-body vision uses a camera system distributed throughout the robot's body to provide comprehensive, multi-perspective visual feedback. 
-							At its core, RoboPanoptes uses a whole-body visuomotor policy that learns complex manipulation skills directly from human demonstrations, efficiently aggregating information from the distributed cameras while maintaining resilience to sensor failures. 
-							Together, these designs unlock new capabilities for RoboPanoptes on tasks such as unboxing in narrow spaces, sweeping multiple or oversized objects, and precise multi-step stowing in cluttered environments, outperforming baselines in adaptability and efficiency.
-						</p>
+						<div style="margin-top: 2em; margin-bottom: 2em;">
+							<h3 style="color: black;">
+								RoboPanoptes unlock new capabilities on tasks such as sweeping multiple or oversized objects, unboxing in narrow spaces, and precise multi-step stowing in cluttered environments.
+							</h3>
+						</div>
 						
 
-						<div class="row">
+						<div class="row" style="margin-top: 3em;">
 							<div class="12u$ 12u$(xsmall)" style="text-align: center;">
-								<h3>Technical Summary Video (with audio)</h3>
+								<h2 style="color: black;">Technical Summary Video</h2>
 								<!-- <video controls playsinline style="width: 100%; margin-right: 5%;">
 									<source src="videos/robopanoptes.mp4" type="video/mp4">
 								</video> -->
-								<iframe width="672" height="378" src="https://www.youtube.com/embed/PwjnnaM2yAc?si=aiWoWdZtb90HxkGs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+								<iframe width="100%" style="aspect-ratio: 16 / 9;" src="https://www.youtube.com/embed/PwjnnaM2yAc?si=aiWoWdZtb90HxkGs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 							</div>
 						</div>
 
 						<hr>
-						<h3>Experiments</h3>
+						<h2 style="color: black;">System Overview</h2>
+						<div class="row" style="margin-bottom: -2em;">
+							<div class="12u$ 12u$(xsmall)" style="text-align: center;">
+								<img src="images/RoboPanopetes_teaser-sys.png" style="width: 100%; height: auto;">
+							</div>
+							<p style="color: black;">
+								RoboPanoptes achieves whole-body dexterity through whole-body vision. 
+								The <b>whole-body dexterity</b> allows the robot to utilize its entire body surface for manipulation such as leveraging multiple contact points or navigating in constrained spaces.
+								Meanwhile, <b>whole-body vision</b> uses a camera system distributed throughout the robot's body to provide comprehensive, multi-perspective visual feedback. 
+								<br>
+								At its core, RoboPanoptes uses a <b>whole-body visuomotor policy</b> that learns complex manipulation skills directly from human demonstrations, efficiently aggregating information from the distributed cameras while resilient to sensor failures. 
+							</p>
+						</div>
+
+						<hr>
+						<h2 style="color: black;">Experiments</h2>
 						
-						<h4>(1) Unboxing &#128230; </h4>
-						<u><b>Task</b></u> The robot is tasked with opening a box with a lid that is randomly placed around the robot. To do so, the robot needs first to locate the small side hole of the box, then enter the box through the hole, drag the box closer if it is out of reach, extend its body through the hole, lift the lid open, and slide the lid aside to fully open the box.
+						<h3>(1) Unboxing &#128230; </h3>
+						<u><b>Task</b></u> The robot is tasked with opening a box with a lid: locate the small side hole of the box, enter the box through the hole, drag the box closer, extend its body through the hole, lift the lid open, and slide the lid aside to fully open the box.
 						<!-- <br>
 						<u><b>Capability</b></u> It demonstrates UMI’s ability to capture and transfer fluid and rapid human motions, precise hand-eye coordination (between RGB and propriocep- tion) and timing alignment (between robot and gripper). -->
 						<br>
@@ -309,7 +321,8 @@
 							</div>
 						</div>
 
-						<h4>(2) Sweeping &#129521; </h4>
+						<br>
+						<h3>(2) Sweeping &#129521; </h3>
 						<u><b>Task</b></u> The robot is tasked to sweep all objects (small or large, randomly placed on a table or under the shelf) into a target region around its base.
 						<!-- <br>
 						<u><b>Capability</b></u> This task tests the system’s ability to learn both prehensile (pick and place) and non-prehensile actions (i.e., pushing to reorientate the cup). It also tests UMI's capability of learning multi-modal action distributions and sense relative depth through monocular camera observation and side mirrors. -->
@@ -448,8 +461,10 @@
 								</div>
 							</div>
 						</div>
+
+						<br>
 						
-						<h4>(3) Stowing &#128095; </h4>
+						<h3>(3) Stowing &#128095; </h3>
 						<u><b>Task</b></u> The robot performs a sequence of actions to stow shoes in a drawer: hook and pull the drawer handle to open it, pick up a pair of shoes one by one, place the shoes inside the drawer, and finally close the drawer by pushing it back. 
 						<!-- <br>
 						<u><b>Capability</b></u> It tests UMI’s ability to synchronize two-arm coordination. -->
@@ -521,7 +536,7 @@
 						</div>
 
 						<hr>
-						<h4>Camera Views Visualizations</h4>
+						<h3>Camera Views Visualizations</h3>
 						We visualize views from all 21 cameras during policy rollouts.
 						<div class="box alt" style="margin-bottom: 1em; margin-top: 1em;">
 							<div class="row 50% uniform" style="width: 100%;">
@@ -534,7 +549,7 @@
 											<p style="color: white; text-align: center; font-size: 1em">1x</p>
 										</div>
 									</span>
-									Unboxing
+									<!-- Unboxing -->
 								</div>
 
 								<div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 25%">
@@ -546,7 +561,7 @@
 											<p style="color: white; text-align: center; font-size: 1em">1x</p>
 										</div>
 									</span>
-									Sweeping (Small)
+									<!-- Sweeping (Small) -->
 								</div>
 
 								<div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 25%">
@@ -558,7 +573,7 @@
 											<p style="color: white; text-align: center; font-size: 1em">1x</p>
 										</div>
 									</span>
-									Sweeping (Large)
+									<!-- Sweeping (Large) -->
 								</div>
 
 								<div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 25%">
@@ -570,10 +585,63 @@
 											<p style="color: white; text-align: center; font-size: 1em">1x</p>
 										</div>
 									</span>
+									<!-- Stowing -->
+								</div>
+							</div>
+						</div>
+
+						<div class="box alt" style="margin-bottom: 1em; margin-top: 1em;">
+							<div class="row 50% uniform" style="width: 100%;">
+								<div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 25%">
+									<span class="image fit" style="margin-bottom: 0.5em;">
+										<video controls autoplay loop muted playsinline style="width: 100%; margin-right: 5%;">
+											<source src="videos/GX010212_crop.MP4" type="video/mp4">
+										</video>
+										<div style="position: absolute; top: 2%; right: 1%">
+											<p style="color: white; text-align: center; font-size: 1em">1x</p>
+										</div>
+									</span>
+									Unboxing
+								</div>
+
+								<div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 25%">
+									<span class="image fit" style="margin-bottom: 0.5em;">
+										<video controls autoplay loop muted playsinline style="width: 100%; margin-right: 5%;">
+											<source src="videos/GX010544-ompressed.mp4" type="video/mp4">
+										</video>
+										<div style="position: absolute; top: 2%; right: 1%">
+											<p style="color: white; text-align: center; font-size: 1em">1x</p>
+										</div>
+									</span>
+									Sweeping (Small)
+								</div>
+
+								<div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 25%">
+									<span class="image fit" style="margin-bottom: 0.5em;">
+										<video controls autoplay loop muted playsinline style="width: 100%; margin-right: 5%;">
+											<source src="videos/GX010549-compressed.mp4" type="video/mp4">
+										</video>
+										<div style="position: absolute; top: 2%; right: 1%">
+											<p style="color: white; text-align: center; font-size: 1em">1x</p>
+										</div>
+									</span>
+									Sweeping (Large)
+								</div>
+
+								<div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 25%">
+									<span class="image fit" style="margin-bottom: 0.5em;">
+										<video controls autoplay loop muted playsinline style="width: 100%; margin-right: 5%;">
+											<source src="videos/GX010374_crop.MP4" type="video/mp4">
+										</video>
+										<div style="position: absolute; top: 2%; right: 1%">
+											<p style="color: white; text-align: center; font-size: 1em">1x</p>
+										</div>
+									</span>
 									Stowing
 								</div>
 							</div>
 						</div>
+
 
 						<hr>
 						<h3>Citation</h3>
@@ -584,7 +652,7 @@
 						<br><br>
 			
 						<h3>Acknowledgement</h3>
-						The authors would like to thank Han Zhang, Ken Wang, Yifan Hou, Haoyu Xiong, Haochen Shi, Mengda Xu, Cheng Chi, Zhenjia Xu, and Adrian Wong for their advice on the design of the robot and implementation of hardware. We thank Huy Ha for his help on rendering and video editing. In addition, we would like to thank all REALab members: Mandi Zhao, Zeyi Liu, Max Du, Hojung Choi, Austin Patel, Shuang Li, Chuer Pan, Yihuai Gao, John So, Eric Liang, et al. for fruitful discussions.
+						The authors would like to thank Han Zhang, Ken Wang, Yifan Hou, Haoyu Xiong, Haochen Shi, Mengda Xu, Cheng Chi, Zhenjia Xu, and Adrian Wong for their advice on the design of the robot and implementation of hardware. We thank Huy Ha for his help on visualizations and video editing. In addition, we would like to thank all REALab members: Mandi Zhao, Zeyi Liu, Max Du, Hojung Choi, Austin Patel, Shuang Li, Chuer Pan, Yihuai Gao, John So, Eric Liang, et al. for fruitful discussions.
 						The views and conclusions contained herein are those of the authors and should not be
 						interpreted as necessarily representing the official policies, either expressed or implied, of the sponsors.
 						<br><br>
