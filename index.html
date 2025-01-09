@@ -18,8 +18,11 @@
 
 		<meta property="og:url"           content="https://robopanoptes.github.io" />
 	    <meta property="og:type"          content="website" />
-	    <meta property="og:title"         content="RoboPanoptes" />
-	    <meta property="og:description"   content="abstract" />
+	    <meta property="og:title"         content="RoboPanoptes: The All-Seeing Robot with Whole-body Dexterity" />
+	    <meta property="og:description"   content="RoboPanoptes is a robot system that achieves whole-body dexterity through whole-body vision. Its whole-body dexterity allows the robot to utilize its entire body surface for manipulation, such as leveraging multiple contact points or navigating constrained spaces.
+		Meanwhile, whole-body vision uses a camera system distributed over the robot's surface to provide comprehensive, multi-perspective visual feedback of its own and the environment's state. 
+		At its core, RoboPanoptes uses a whole-body visuomotor policy that learns complex manipulation skills directly from human demonstrations, efficiently aggregating information from the distributed cameras while maintaining resilience to sensor failures. 
+		Together, these design aspects unlock new capabilities and tasks, allowing RoboPanoptes to unbox in narrow spaces, sweep multiple or oversized objects, and succeed in multi-step stowing in cluttered environments, outperforming baselines in adaptability and efficiency." />
 	
 		<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
@@ -85,9 +88,11 @@
 						<!-- <p style="color: black;"> -->
 						<div style="margin-top: 2em; margin-bottom: 2em;">
 							<h3 style="color: black;">
-								RoboPanoptes is a robot system that utilizes all of its body parts to <b>sense</b> and <b>interact</b> with the environment. 
+								<!-- RoboPanoptes is a 9-DoF robot featuring 21 on-body cameras, enabling whole-body dexterity and whole-body vision that allow it to precisely navigate severely occluded cluttered environments and efficiently solve sweeping, stowing and unboxing tasks using its novel manipulation capabilities. -->
+								RoboPanoptes is a 9-DoF robot featuring 21 on-body cameras, utilizing all of its body parts to sense and interact with the environment, allowing it to precisely navigate severely occluded cluttered environments and efficiently solve sweeping, stowing, and unboxing tasks using its novel manipulation capabilities.
+								<!-- RoboPanoptes is a robot system that utilizes all of its body parts to <b>sense</b> and <b>interact</b> with the environment.  -->
 							<!-- <br> -->
-								<i>Argos Panoptes</i> is a many-eyed giant in Greek mythology, with "panoptes" meaning "all-seeing". Thus <i>RoboPanoptes</i> is the many-eyed, all-seeing robot.
+								<!-- <i>Argos Panoptes</i> is a many-eyed giant in Greek mythology, with "panoptes" meaning "all-seeing". Thus <i>RoboPanoptes</i> is the many-eyed, all-seeing robot. -->
 							</h3>
 						</div>
 						<!-- </p> -->
@@ -163,11 +168,11 @@
 							</div>
 						</div>
 
-						<div style="margin-top: 2em; margin-bottom: 2em;">
+						<!-- <div style="margin-top: 2em; margin-bottom: 2em;">
 							<h3 style="color: black;">
 								RoboPanoptes unlock new capabilities on tasks such as sweeping multiple or oversized objects, unboxing in narrow spaces, and precise multi-step stowing in cluttered environments.
 							</h3>
-						</div>
+						</div> -->
 						
 
 						<div class="row" style="margin-top: 3em;">
@@ -176,7 +181,7 @@
 								<!-- <video controls playsinline style="width: 100%; margin-right: 5%;">
 									<source src="videos/robopanoptes.mp4" type="video/mp4">
 								</video> -->
-								<iframe width="100%" style="aspect-ratio: 16 / 9;" src="https://www.youtube.com/embed/QEJkkflyroI?si=479sbP1MHlQ7HJRm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+								<iframe width="100%" style="aspect-ratio: 16 / 9;" src="https://www.youtube.com/embed/Pa1kGAZcxrA?si=GAbtaBMm44W2r6Gs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 							</div>
 						</div>
 
@@ -188,10 +193,10 @@
 							</div>
 							<p style="color: black;">
 								RoboPanoptes achieves whole-body dexterity through whole-body vision. 
-								The <b>whole-body dexterity</b> allows the robot to utilize its entire body surface for manipulation such as leveraging multiple contact points or navigating in constrained spaces.
-								Meanwhile, <b>whole-body vision</b> uses a camera system distributed throughout the robot's body to provide comprehensive, multi-perspective visual feedback. 
+								Its <b>whole-body dexterity</b> allows the robot to utilize its entire body surface for manipulation, such as leveraging multiple contact points or navigating constrained spaces.
+								Meanwhile, <b>whole-body vision</b> uses a camera system distributed over the robot's surface to provide comprehensive, multi-view observations of its environment and visual feedback of its own state. 
 								<br>
-								At its core, RoboPanoptes uses a <b>whole-body visuomotor policy</b> that learns complex manipulation skills directly from human demonstrations, efficiently aggregating information from the distributed cameras while resilient to sensor failures. 
+								At its core, RoboPanoptes uses a <b>whole-body visuomotor policy</b> that learns complex manipulation skills directly from human demonstrations, efficiently aggregating information from the camera system while maintaining resilience to sensor failures. 
 							</p>
 						</div>
 
@@ -313,7 +318,7 @@
 							<div class="row 50% uniform" style="width: 80%;">
 								<div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 100%">
 									<span class="image fit" style="margin-bottom: 0.5em;">
-										<video controls muted playsinline style="width: 100%; margin-right: 5%;">
+										<video controls muted style="width: 100%; margin-right: 5%;" preload="metadata">
 											<source src="videos/unbox_all_compressed.mp4" type="video/mp4">
 										</video>
 									</span>
@@ -454,7 +459,7 @@
 							<div class="row 50% uniform" style="width: 80%;">
 								<div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 100%">
 									<span class="image fit" style="margin-bottom: 0.5em;">
-										<video controls muted playsinline style="width: 100%; margin-right: 5%;">
+										<video controls muted style="width: 100%; margin-right: 5%;" preload="metadata">
 											<source src="videos/sweep_all_compressed.mp4" type="video/mp4">
 										</video>
 									</span>
@@ -527,7 +532,7 @@
 							<div class="row 50% uniform" style="width: 80%;">
 								<div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 100%">
 									<span class="image fit" style="margin-bottom: 0.5em;">
-										<video controls muted playsinline style="width: 100%; margin-right: 5%;">
+										<video controls muted style="width: 100%; margin-right: 5%;" preload="metadata">
 											<source src="videos/stow_all_compressed.mp4" type="video/mp4">
 										</video>
 									</span>
@@ -537,7 +542,7 @@
 
 						<hr>
 						<h3>Camera Views Visualizations</h3>
-						We visualize views from all 21 cameras during policy rollouts.
+						We visualize views from all 21 cameras during policy rollouts. Note that, in  in the sweeping (small), robopanoptes is robust to the frame drops in the top view.
 						<div class="box alt" style="margin-bottom: 1em; margin-top: 1em;">
 							<div class="row 50% uniform" style="width: 100%;">
 								<div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 25%">
