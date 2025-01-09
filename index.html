@@ -199,11 +199,11 @@
 						<h2 style="color: black;">Experiments</h2>
 						
 						<h3>(1) Unboxing &#128230; </h3>
-						<u><b>Task</b></u> The robot is tasked with opening a box with a lid: locate the small side hole of the box, enter the box through the hole, drag the box closer, extend its body through the hole, lift the lid open, and slide the lid aside to fully open the box.
+						<u><b>Task</b></u> The robot is tasked with opening a box with a lid: locate the small side hole of the box, enter the box through the hole, drag the box closer, extend its body inside the box, lift the lid, and slide the lid aside to fully open the box.
 						<!-- <br>
 						<u><b>Capability</b></u> It demonstrates UMI’s ability to capture and transfer fluid and rapid human motions, precise hand-eye coordination (between RGB and propriocep- tion) and timing alignment (between robot and gripper). -->
 						<br>
-						<u><b>Comparisons</b></u> [Top-down Camera] policy struggles to determine the forward reach height. [Head Camera] policy fails by moving in the wrong direction. [w/o Camera Pose Encoding] policy struggles to open the lid and is less accurate at locating and entering the hole. [w/o Blink Training] policy underperforms in scenarios with camera dropout.
+						<u><b>Comparisons</b></u> [Top-down Camera] policy struggles to determine the correct reaching height. [Head Camera] policy moves in the wrong direction. [w/o Camera Pose Encoding] policy struggles to open the lid, and at locating and entering the hole. [w/o Blink Training] policy underperforms in scenarios with camera dropout.
 						<div class="box alt" style="margin-bottom: 1em; margin-top: 1em;">
 							<div class="row 50% uniform" style="width: 100%;">
 								<div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 25%">
@@ -327,7 +327,7 @@
 						<!-- <br>
 						<u><b>Capability</b></u> This task tests the system’s ability to learn both prehensile (pick and place) and non-prehensile actions (i.e., pushing to reorientate the cup). It also tests UMI's capability of learning multi-modal action distributions and sense relative depth through monocular camera observation and side mirrors. -->
 						<br>
-						<u><b>Comparisons</b></u> [Top-down Camera] policy fails to detect objects under the shelf and often knocks down tall objects. [Neck Cameras] policy struggles with objects behind the robot due to self-occlusion.
+						<u><b>Comparisons</b></u> [Top-down Camera] policy fails to detect objects under the shelf and often knocks down tall objects. [Neck Cameras] policy struggles with objects located behind the robot due to self-occlusion.
 						<div class="box alt" style="margin-bottom: 1em; margin-top: 1em;">
 							<div class="row 50% uniform" style="width: 100%;">
 								<div class="2u" style="font-size: 1em; line-height: 1.5em; text-align: center; width: 33%">
@@ -408,7 +408,7 @@
 							</div>
 						</div>
 
-						<u><b>Efficiency Comparisons</b></u> With whole-body sweeping, the robot manipulates object piles much more efficiently by leveraging multiple contacts (2s/block for teleoperation and 3.2s/block for rollouts) than by using only an end-effector to move objects one by one (9.3s/block for teleoperation).
+						<u><b>Efficiency Comparisons</b></u> With whole-body sweeping, the robot manipulates object piles much more efficiently by leveraging multiple contacts (2s/block for teleoperation and 3.2s/block for rollouts), as compared to using only the end-effector to move objects one by one (9.3s/block for teleoperation).
 
 						<div class="box alt" style="margin-bottom: 1em; margin-top: 1em;">
 							<div class="row 50% uniform" style="width: 100%;">
@@ -465,11 +465,11 @@
 						<br>
 						
 						<h3>(3) Stowing &#128095; </h3>
-						<u><b>Task</b></u> The robot performs a sequence of actions to stow shoes in a drawer: hook and pull the drawer handle to open it, pick up a pair of shoes one by one, place the shoes inside the drawer, and finally close the drawer by pushing it back. 
+						<u><b>Task</b></u> The robot performs a sequence of actions to stow shoes in a drawer: hook and pull the drawer handle to open it, pick up a pair of shoes (one by one), place the shoes inside the drawer, and push the drawer to close it. 
 						<!-- <br>
 						<u><b>Capability</b></u> It tests UMI’s ability to synchronize two-arm coordination. -->
 						<br>
-						<u><b>Comparisons</b></u> [Top-down Camera] fails to locate the handle. [w/o Camera Pose Encoding] is less precise, leading to errors like missing the shoe or misaligning the drawer.
+						<u><b>Comparisons</b></u> [Top-down Camera] policy fails to locate the handle. [w/o Camera Pose Encoding] policy's actions are less precise, leading to errors like missing the shoe or misaligning the drawer.
 						<!-- For example, when the two arms lift the bottom hem of the shirt, it often misses one of the grasps due to asynchronous grasp actions. -->
 						<div class="box alt" style="margin-bottom: 1em; margin-top: 1em;">
 							<div class="row 50% uniform" style="width: 100%;">
